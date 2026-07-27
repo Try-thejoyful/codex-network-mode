@@ -1,6 +1,34 @@
 # codex-network-mode
 
-`codex-network-mode` is a small macOS helper for switching Codex between explicit proxy mode and direct mode.
+`codex-network-mode` is a small macOS helper for users who cannot connect to Codex, ChatGPT, or other OpenAI services reliably from a Mac, especially when proxy, VPN, PAC mode, or other network-circumvention setups are involved.
+
+It helps you switch Codex between explicit proxy mode and direct mode without manually editing shell files every time.
+
+## When this is useful
+
+- Codex cannot connect when your local proxy is off.
+- ChatGPT or OpenAI access is unstable under PAC mode.
+- You can reach the internet through a router-level proxy, but Codex still needs an explicit local proxy.
+- You need a quick switch between forced proxy mode and direct mode for troubleshooting.
+- You want the proxy environment for Codex to survive restarts more reliably through `launchctl`.
+
+## What it does
+
+- Sets explicit proxy environment variables for Codex.
+- Clears those variables when you want direct connection mode.
+- Stores the active mode under `~/.config/codex/`.
+- Applies the environment through `launchctl setenv` on macOS.
+
+## Related local skill
+
+If you also maintain local Codex skills, a related skill on this Mac is [`$prompt-contract-review`](/Users/harry/.codex/skills/prompt-contract-review/SKILL.md).
+
+Use it when you want to audit a prompt without executing the prompt's task.
+
+```text
+$prompt-contract-review
+<your prompt here>
+```
 
 ## Install
 

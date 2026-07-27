@@ -1,5 +1,7 @@
 # codex-network-mode
 
+Use this on a Mac when Codex, ChatGPT, or other OpenAI services are not reachable directly, or when you need to switch between proxy and direct networking during troubleshooting.
+
 Install on another Mac:
 
 ```bash
