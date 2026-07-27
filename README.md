@@ -15,6 +15,7 @@ It helps you switch Codex between explicit proxy mode and direct mode without ma
 ## What it does
 
 - Sets explicit proxy environment variables for Codex.
+- Prompts for your own proxy host and ports the first time you enable proxy mode.
 - Clears those variables when you want direct connection mode.
 - Stores the active mode under `~/.config/codex/`.
 - Applies the environment through `launchctl setenv` on macOS.
@@ -37,7 +38,17 @@ chmod +x ./install-codex-network-mode.sh
 ./install-codex-network-mode.sh
 ```
 
-## Custom proxy ports
+On first use of proxy mode, the tool will ask for:
+
+- Proxy host or IP
+- HTTP proxy port
+- HTTPS proxy port
+- SOCKS5 proxy port
+- `NO_PROXY` value
+
+If you want to preseed these values during install, you can still do that with environment variables:
+
+## Optional non-interactive install
 
 ```bash
 HTTP_PROXY_URL=http://127.0.0.1:7890 \
@@ -53,7 +64,10 @@ ALL_PROXY_URL=socks5://127.0.0.1:7891 \
 ~/.local/bin/codex-network-mode proxy
 ~/.local/bin/codex-network-mode direct
 ~/.local/bin/codex-network-mode status
+~/.local/bin/codex-network-mode config
 ```
+
+`config` lets you rewrite the saved proxy host and port settings later.
 
 ## Notes
 

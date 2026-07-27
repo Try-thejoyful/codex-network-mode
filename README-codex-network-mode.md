@@ -9,7 +9,9 @@ chmod +x ./install-codex-network-mode.sh
 ./install-codex-network-mode.sh
 ```
 
-Custom proxy ports:
+The first time proxy mode is enabled, the tool will ask for the local proxy host and ports instead of assuming fixed values.
+
+Optional non-interactive install:
 
 ```bash
 HTTP_PROXY_URL=http://127.0.0.1:7890 \
@@ -25,6 +27,7 @@ Usage after install:
 ~/.local/bin/codex-network-mode proxy
 ~/.local/bin/codex-network-mode direct
 ~/.local/bin/codex-network-mode status
+~/.local/bin/codex-network-mode config
 ```
 
 Notes:
