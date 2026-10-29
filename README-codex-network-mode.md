@@ -1,4 +1,4 @@
-# codex-network-mode
+# proxy-cli-mode
 
 ## 中文说明
 
@@ -25,11 +25,11 @@ ALL_PROXY_URL=socks5://127.0.0.1:7891 \
 安装后的用法：
 
 ```bash
-~/.local/bin/codex-network-mode
-~/.local/bin/codex-network-mode proxy
-~/.local/bin/codex-network-mode direct
-~/.local/bin/codex-network-mode status
-~/.local/bin/codex-network-mode config
+~/.local/bin/proxy-cli-mode
+~/.local/bin/proxy-cli-mode proxy
+~/.local/bin/proxy-cli-mode direct
+~/.local/bin/proxy-cli-mode status
+~/.local/bin/proxy-cli-mode config
 ```
 
 注意：
@@ -65,11 +65,11 @@ ALL_PROXY_URL=socks5://127.0.0.1:7891 \
 Usage after install:
 
 ```bash
-~/.local/bin/codex-network-mode
-~/.local/bin/codex-network-mode proxy
-~/.local/bin/codex-network-mode direct
-~/.local/bin/codex-network-mode status
-~/.local/bin/codex-network-mode config
+~/.local/bin/proxy-cli-mode
+~/.local/bin/proxy-cli-mode proxy
+~/.local/bin/proxy-cli-mode direct
+~/.local/bin/proxy-cli-mode status
+~/.local/bin/proxy-cli-mode config
 ```
 
 Notes:

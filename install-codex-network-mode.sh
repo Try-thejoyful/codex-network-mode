@@ -3,7 +3,7 @@ set -euo pipefail
 
 BIN_DIR="$HOME/.local/bin"
 CODEX_DIR="$HOME/.config/codex"
-SCRIPT_PATH="$BIN_DIR/codex-network-mode"
+SCRIPT_PATH="$BIN_DIR/proxy-cli-mode"
 ACTIVE_ENV="$CODEX_DIR/active-env.sh"
 PROXY_ENV="$CODEX_DIR/proxy-env.sh"
 DIRECT_ENV="$CODEX_DIR/direct-env.sh"
@@ -211,7 +211,7 @@ case "${1:-}" in
   config) configure_proxy ;;
   "") interactive_menu ;;
   *)
-    echo "Usage: codex-network-mode [proxy|direct|status|config]" >&2
+    echo "Usage: proxy-cli-mode [proxy|direct|status|config]" >&2
     exit 1
     ;;
 esac
@@ -258,7 +258,7 @@ case "$DEFAULT_MODE" in
     ;;
 esac
 
-echo "Installed codex-network-mode to $SCRIPT_PATH"
+echo "Installed proxy-cli-mode to $SCRIPT_PATH"
 if [[ -f "$PROXY_ENV" ]]; then
   echo "Proxy configuration file: $PROXY_ENV"
 else

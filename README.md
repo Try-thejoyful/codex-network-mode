@@ -1,8 +1,8 @@
-# codex-network-mode
+# proxy-cli-mode
 
 ## 中文说明
 
-`codex-network-mode` 是一个面向 macOS 的小工具，适合以下场景使用：你在本机无法稳定连接 Codex、ChatGPT 或其他 OpenAI 服务，尤其是在代理、VPN、PAC 模式、透明代理或其他翻墙环境下。
+`proxy-cli-mode` 是一个面向 macOS 的小工具，适合以下场景使用：你在本机无法稳定连接 Codex、ChatGPT 或其他 OpenAI 服务，尤其是在代理、VPN、PAC 模式、透明代理或其他翻墙环境下。
 
 它的作用是帮助你在 `显式固定代理` 和 `直连` 两种模式之间快速切换，而不必每次手动修改 shell 配置文件。
 
@@ -62,11 +62,11 @@ ALL_PROXY_URL=socks5://127.0.0.1:7891 \
 ### 使用方式
 
 ```bash
-~/.local/bin/codex-network-mode
-~/.local/bin/codex-network-mode proxy
-~/.local/bin/codex-network-mode direct
-~/.local/bin/codex-network-mode status
-~/.local/bin/codex-network-mode config
+~/.local/bin/proxy-cli-mode
+~/.local/bin/proxy-cli-mode proxy
+~/.local/bin/proxy-cli-mode direct
+~/.local/bin/proxy-cli-mode status
+~/.local/bin/proxy-cli-mode config
 ```
 
 其中 `config` 用于后续重新填写并覆盖已保存的代理地址和端口设置。
@@ -81,7 +81,7 @@ ALL_PROXY_URL=socks5://127.0.0.1:7891 \
 
 ## English
 
-`codex-network-mode` is a small macOS helper for users who cannot connect to Codex, ChatGPT, or other OpenAI services reliably, especially when proxy, VPN, PAC mode, transparent proxy, or other network-circumvention setups are involved.
+`proxy-cli-mode` is a small macOS helper for users who cannot connect to Codex, ChatGPT, or other OpenAI services reliably, especially when proxy, VPN, PAC mode, transparent proxy, or other network-circumvention setups are involved.
 
 It helps you switch between `explicit proxy` mode and `direct` mode without manually editing shell configuration files every time.
 
@@ -141,11 +141,11 @@ ALL_PROXY_URL=socks5://127.0.0.1:7891 \
 ### Usage
 
 ```bash
-~/.local/bin/codex-network-mode
-~/.local/bin/codex-network-mode proxy
-~/.local/bin/codex-network-mode direct
-~/.local/bin/codex-network-mode status
-~/.local/bin/codex-network-mode config
+~/.local/bin/proxy-cli-mode
+~/.local/bin/proxy-cli-mode proxy
+~/.local/bin/proxy-cli-mode direct
+~/.local/bin/proxy-cli-mode status
+~/.local/bin/proxy-cli-mode config
 ```
 
 `config` lets you rewrite the saved proxy host and port settings later.
